@@ -46,11 +46,13 @@ function Movies (){
         <div>
             <Table striped bordered hover>
                 <thead>
+                    <tr>
                     <th>No</th>
                     <th>Judul</th>
                     <th>Tahun Rilis</th>
                     <th>Sutradara</th>
                     <th>Aksi</th>
+                    </tr>
                 </thead>
                 <tbody>
                     {

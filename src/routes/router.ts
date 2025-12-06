@@ -13,6 +13,32 @@ const router = createBrowserRouter([
                         }
                     }
                 },
+                  {
+                path : "signUp",
+                lazy : {
+                    Component : async() => {
+                        const component = await import("../pages/auth/signUp/signUp.tsx")
+                        return component.default
+                    }
+                }
+            },
+             {
+                path : "signIn",
+                lazy : {
+                    Component : async() => {
+                        const component = await import("../pages/auth/signIn/signIn.tsx")
+                        return component.default
+                    }
+                }
+            },{
+                path : "/movie",
+                lazy : {
+                    Component : async() => {
+                        const component = await import("../pages/movies/Movies.tsx")
+                        return component.default
+                    }
+                }
+            },
                 {
                     path : "add-movie",
                     lazy : {
